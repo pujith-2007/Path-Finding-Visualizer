@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #111;
+    color: #eee;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.controls {
+    margin-bottom: 15px;
+}
+
+#status {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #f39c12;
+    min-height: 20px;
+}
+
+button {
+    padding: 8px 14px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #444;
+    color: white;
+}
+
+button:hover {
+    background: #666;
+}
+
+.info {
+    display: block;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Grid */
+#grid {
+    display: grid;
+    grid-template-columns: repeat(20, 25px);
+    justify-content: center;
+    margin: 20px auto;
+    gap: 2px;
+}
+
+.cell {
+    width: 25px;
+    height: 25px;
+    background: #222;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.cell.start {
+    background: #2ecc71;
+}
+
+.cell.end {
+    background: #e74c3c;
+}
+
+.cell.wall {
+    background: #555;
+}
+
+.cell.visited {
+    background: #3498db;
+}
+
+.cell.path {
+    background: #f1c40f;
+}
